@@ -1,0 +1,24 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+/* تطبيق الخط على العناوين فقط */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-shadows-into-light-two);
+}
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}

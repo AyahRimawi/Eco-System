@@ -1,0 +1,45 @@
+{
+  "name": "trees",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.1.5",
+    "@paypal/react-paypal-js": "^8.7.0",
+    "@react-three/drei": "^9.114.3",
+    "@react-three/fiber": "^8.17.10",
+    "@stripe/react-stripe-js": "^2.8.1",
+    "@stripe/stripe-js": "^4.8.0",
+    "axios": "^1.7.7",
+    "bcryptjs": "^2.4.3",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "dotenv": "^16.4.5",
+    "framer-motion": "^11.11.8",
+    "jsonwebtoken": "^9.0.2",
+    "lucide-react": "^0.451.0",
+    "mongoose": "^8.7.0",
+    "next": "14.2.14",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^5.3.0",
+    "react-modal": "^3.16.1",
+    "react-toastify": "^10.0.5",
+    "recharts": "^2.13.0",
+    "stripe": "^17.2.0",
+    "sweetalert2": "^11.14.2",
+    "swiper": "^11.1.14",
+    "tailwind-merge": "^2.5.3",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
+  }
+}
