@@ -167,6 +167,7 @@ export default function EventPage() {
     <>
       <Navbar />
       <div className="m-4 sm:m-8 md:m-16 lg:m-28">
+        {/* ------Alert------- */}
         <Toaster
           position="top-right"
           toastOptions={{
@@ -177,8 +178,10 @@ export default function EventPage() {
             },
           }}
         />
+        {/* ----------------- */}
+
         <div className="flex flex-col lg:flex-row w-full h-auto lg:h-[650px] relative">
-          {/* Left section (1/3) */}
+          {/*---------- Left section (1/3)-------- */}
           <div className="w-full lg:w-1/3 bg-[#E9F1EE] overflow-y-auto p-4 pt-8 lg:pt-48 z-0 order-2 lg:order-1">
             <img
               src="/images/farmer.png"
@@ -186,8 +189,9 @@ export default function EventPage() {
               className="w-[200px] h-[400px] mx-auto lg:mx-0 hidden lg:block"
             />
           </div>
+          {/* ----------------- */}
 
-          {/* Right section (2/3) */}
+          {/*------- Right section (2/3) ---------*/}
           <div className="w-full lg:w-2/3 bg-[#3e943d] overflow-y-auto p-4 order-3 lg:order-2">
             {/* Improved Stepper with Back button */}
             <div className="relative mb-8">
@@ -202,7 +206,7 @@ export default function EventPage() {
                   </button>
                 )}
 
-              {/* Stepper */}
+              {/*-------- Stepper ----------*/}
               <div className="flex justify-between items-center relative px-6">
                 {[1, 2, 3, 4].map((s) => (
                   <div key={s} className="flex flex-col items-center z-10">
@@ -222,7 +226,7 @@ export default function EventPage() {
                     </div>
                   </div>
                 ))}
-                {/* Thinner white line not visible on edges */}
+                {/*------ Thinner white line not visible on edges ------*/}
                 <div
                   className="absolute top-6 left-[5%] right-[5%] h-0.5 bg-white"
                   style={{ zIndex: 0 }}
@@ -230,7 +234,7 @@ export default function EventPage() {
               </div>
             </div>
 
-            {/* Step content */}
+            {/*----- Step content ------*/}
             {step === 1 && (
               <div className="mt-4">
                 <JordanMap onRegionSelect={handleRegionSelect} />
@@ -263,7 +267,7 @@ export default function EventPage() {
             {step === 4 && <RegistrationSuccess event={selectedEvent} />}
           </div>
 
-          {/* Box above the dividing line */}
+          {/*------ Box above the dividing line -------*/}
           <div className="lg:absolute lg:left-[26%] lg:top-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 mt-4 w-full lg:w-[350px] h-auto lg:h-[400px] bg-white shadow-lg z-10 p-8 rounded order-1 lg:order-3">
             {step === 1 && (
               <>
